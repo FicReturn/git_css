@@ -1,0 +1,40 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas:
+    "green green green green green green"
+    "yellow yellow red red blue blue"
+    "yellow yellow red red blue blue"
+    "orange orange orange orange blue blue";
+    grid-gap: 20px;
+}
+#green{
+    margin: 0;
+    grid-area: green;
+    
+}
+#yellow{
+    grid-area: yellow;
+}
+#red{
+    grid-area: red;
+}
+#blue{
+    margin: 0;
+    grid-area: blue;
+}
+#orange{
+    margin: 0;
+    grid-area: orange;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}

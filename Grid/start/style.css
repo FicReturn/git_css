@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.result {
+    grid-area: result;
+    background-color: rgb(66, 64, 64);
+    text-align: end !important;
+    color: white;
+}
+
+.plus {
+    grid-area: plus;
+    background-color: rgba(130, 130, 134, 0.822);
+    font-weight: bold;
+}
+
+.minus {
+    grid-area: minus;
+    background-color: rgba(130, 130, 134, 0.822);
+}
+
+.times {
+    grid-area: times;
+    background-color: rgba(130, 130, 134, 0.822);
+    font-weight: bold;
+}
+
+.divided {
+    grid-area: divided;
+    background-color: rgba(130, 130, 134, 0.822);
+    font-weight: bold;
+}
+
+.seven {
+    grid-area: seven;
+    background-color: white;
+}
+
+.eight {
+    grid-area: eight;
+    background-color: white;
+}
+
+.nine {
+    grid-area: nine;
+    background-color: white;
+}
+
+.equals {
+    grid-area: equals;
+    background-color: red;
+    padding-top: 150px !important;
+    font-weight: bold;
+}
+
+.four {
+    grid-area: four;
+    background-color: white;
+}
+
+.five {
+    grid-area: five;
+    background-color: white;
+}
+
+.six {
+    grid-area: six;
+    background-color: white;
+}
+
+.one {
+    grid-area: one;
+    background-color: white;
+}
+
+.two {
+    grid-area: two;
+    background-color: white;
+}
+
+.three {
+    grid-area: three;
+    background-color: white;
+}
+
+.zero {
+    grid-area: zero;
+    background-color: white;
+}
+
+.point {
+    grid-area: point;
+    background-color: white;
+}
+
+.ac {
+    grid-area: ac;
+    background-color: white;
+}
+
+.calculator {
+    display: grid;
+    grid-template-areas:
+    'result result result result'
+    'plus minus times divided'
+    'seven eight nine equals'
+    'four five six equals'
+    'one two three equals'
+    'zero point ac equals';
+    gap: 1px;
+    background-color: black;
+    padding: 1px;
+    border-radius: 10px; 
+    margin: 20px; 
+    overflow: hidden;
+    width: 320px;
+}
+
+.calculator > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+}
